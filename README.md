@@ -3,11 +3,11 @@ Blue/Green deployment using jenkins/ Gitlab etc on K8s.
 
 Blue/Green deployment is a strategy that allows you to deploy new application versions with minimal risk and zero downtime. This is commonly achieved in Kubernetes using Jenkins or GitLab CI/CD pipelines, where the new (green) version of the application is deployed alongside the current (blue) version. Once validated, traffic is switched to the new version. Here’s how to implement Blue/Green deployment on Kubernetes using Jenkins or GitLab:
 
-Prerequisites
-Kubernetes Cluster: A running Kubernetes cluster with access configured.
-CI/CD Pipeline: Jenkins or GitLab CI/CD is installed and configured.
-Kubernetes Credentials: Cluster credentials configured on Jenkins or GitLab for deployment access.
-Ingress Controller: For managing external traffic routing (optional but recommended).
+Prerequisites:
+1. Kubernetes Cluster: A running Kubernetes cluster with access configured.
+2. CI/CD Pipeline: Jenkins or GitLab CI/CD is installed and configured.
+3. Kubernetes Credentials: Cluster credentials configured on Jenkins or GitLab for deployment access.
+4. Ingress Controller: For managing external traffic routing (optional but recommended).
 
 Kubernetes Manifest for Blue/Green Deployment
 
